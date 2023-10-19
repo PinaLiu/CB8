@@ -1,0 +1,29 @@
+
+
+
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgb(0, 0, 0, 0.35);
+}
+
+.wrapper:hover {
+    background-color: lightseagreen;
+}
+h1 {
+  color: red;
+}
+
+.mia {
+  color: blue;
+}
+
+.main-image {
+    height: 200px;
+    object-radius
+}
