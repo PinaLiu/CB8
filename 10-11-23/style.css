@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*immagine tt sfondo */
+.main {
+  display: flex;
+  /* position: relative; */
+  height: 100%;
+
+  background-color: black;
+  background-image: url(https://picsum.photos/1600/700);
+  background-repeat: no-repeat;
+
+  /* Centra l'immagine orizzontalmente e verticalmente */
+  background-position: center center;
+  background-size: cover;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.click {
+  display: none;
+}
+
+.gallery {
+  padding: 30px;
+
+  align-items: center;
+
+  /* non riesco ad utilizzare il box model con space around . si mettono tutte in colonna*/
+
+  /* display: flex;
+  justify-content: space-around; */
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallery h3 {
+  padding: 30px;
+  text-align: center;
+}
+
+.gallery img {
+  margin: 10px;
+}
