@@ -1,0 +1,374 @@
+/* colori
+rgb(9, 148, 9) menu e footer
+ */
+
+/* GOOGLE FONT  h1*/
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* FONT p */
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  /* azzeriamo margin e padding per rimuovere gli spazi di default del browser */
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+/*end reset*/
+
+/* header */
+body {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0;
+}
+.header-main {
+  width: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 75%;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 35px;
+}
+
+.nav-menu ul {
+  list-style-type: none; /*no pallini*/
+  display: flex;
+  flex-wrap: wrap; /* ho affiancato i 2 <li> */
+  gap: 20px;
+}
+
+.nav-menu ul li a {
+  color: black;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none; /*toglie il sottolineato*/
+}
+.btn-dx {
+  display: inline-block;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+.btn-sx {
+  display: inline-block;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+}
+/* end header */
+
+/* HERO */
+h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+}
+
+h2,
+p {
+  font-family: "Indie Flower", cursive;
+}
+.hero-text p {
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+  font-weight: bold;
+}
+.hero {
+  width: 100%;
+}
+
+.hero-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  width: 100%;
+  /*centra il testo all'interno del div orizzontalmente*/
+  padding: 20px;
+  padding-left: 90px;
+}
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* END HERO */
+
+/* bottone */
+
+.button {
+  display: inline-block;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 30px;
+  border: 1px solid dodgerblue;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;
+  color: dodgerblue;
+}
+/*end bottone */
+
+/* text with gif card section2 */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-text {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.main-gif {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.card-gif {
+  flex: 0 0 calc(33.33% - 20px);
+  text-align: center;
+  margin: 10px;
+}
+
+.card-gif img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card-gif h4,
+.card-gif p {
+  margin: 10px 0;
+}
+
+/*services */
+.services {
+  width: 100%;
+}
+
+.services-wrapper {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* */
+}
+.services-text {
+  width: 100%;
+
+  padding: 50px;
+  text-align: left;
+  display: flex;
+
+  flex-direction: column; /* senza risultano allineati  */
+}
+
+.services-img {
+  width: 100%;
+}
+
+.services-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+}
+
+/* barra blu */
+.barra-blu {
+  background-color: dodgerblue;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  margin: 0;
+}
+
+/* our bllog */
+/* Modifiche alle carte dell'ultima sezione */
+
+.main-card-img {
+  display: flex;
+  justify-content: space-evenly; /* Cambia space-between a space-around */
+  flex-wrap: wrap;
+  margin: 20px 0; /* Aumenta il margine per separare dalle sezioni circostanti */
+}
+
+.card-img {
+  flex: 0 0 calc(30% - 20px); /* Imposta la larghezza al 30%, considerando i margini */
+  /* border: 1px solid lightgray; */
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-img h4,
+.card-img p {
+  margin: 10px 0;
+}
+/* button-card-img */
+.button-card-img {
+  text-decoration: none;
+}
+/*quando seleziono una card-img*/
+.card-img:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  transition: transform 0.3s ease; /*effetto fluido*/
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5); /*ombra*/
+}
+/* Evidenzia h4 e il link al passaggio del mouse */
+
+.card-img:hover h4,
+.card-img:hover a {
+  color: dodgerblue;
+}
+
+/* sezione contatti */
+.contact {
+  width: 100%;
+}
+
+.contact-wrapper {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  background-color: rgba(30, 144, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+
+  /* */
+}
+.contact-text {
+  width: 100%;
+
+  padding: 50px;
+  text-align: left;
+  display: flex;
+
+  flex-direction: column; /* senza risultano allineati  */
+  flex: 1;
+}
+.contact-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0.7; /*per occupare meno spazio rispetto al contact-text*/
+}
+textarea {
+  width: 60%;
+  /* height: 100px; */
+  margin-bottom: 10px;
+  resize: none;
+}
+.button-submit {
+  display: inline-block;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 30px;
+  border: 1px solid dodgerblue;
+  padding: 5px 30px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button-submit:hover {
+  background-color: white;
+  color: dodgerblue;
+}
+/* end sezione contatti */
+@media only screen and (min-width: 768px) {
+  /*da tablet in poi*/
+  .services-text,
+  .services-img,
+  textarea {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .nav-menu ul li a {
+    font-size: 16px;
+  }
+  /*eliminare i 2 elementi con i paragrafi della seconda sezione */
+  .no-mobile {
+    display: none;
+  }
+}
+
+/* end*/
+
+/* footer  */
+.footer {
+  width: 100%;
+  background-color: dodgerblue;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/*end footer */
