@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather App Giuseppina Liuzza</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./modules/http.js"></script>
+    <script type="module" src="./modules/components.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Weather on Sicily</h1>
+      <!-- select delle 9 provincie -->
+
+      <select id="citySelect">
+        <option value="">(select one)</option>
+        <option value="Agrigento">Agrigento</option>
+        <option value="Caltanissetta">Caltanissetta</option>
+        <option value="Catania">Catania</option>
+        <option value="Enna">Enna</option>
+        <option value="Messina">Messina</option>
+        <option value="Palermo">Palermo</option>
+        <option value="Ragusa">Ragusa</option>
+        <option value="Siracusa">Siracusa</option>
+        <option value="Trapani">Trapani</option>
+      </select>
+    </nav>
+
+    <div class="container-card" id="idContainerCard"></div>
+  </body>
+</html>
