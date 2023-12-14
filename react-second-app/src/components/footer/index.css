@@ -1,0 +1,11 @@
+/* footer  */
+.footer {
+  width: 100%;
+
+  background-color: rgba(36, 154, 213, 0.8);
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+/*end footer */
