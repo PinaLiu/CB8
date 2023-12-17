@@ -1,0 +1,24 @@
+
+.carosello__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .carosello__button {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .carosello__image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    /* margin: 0 10px; */
+  }
+  

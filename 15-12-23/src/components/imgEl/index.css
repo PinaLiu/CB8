@@ -1,0 +1,9 @@
+.img-container {
+  /* border: solid; */
+  /* height: auto; */
+  
+}
+
+.img-container img {
+  border-radius: 12px;
+}
