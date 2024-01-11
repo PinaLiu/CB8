@@ -1,0 +1,10 @@
+.TodoItem {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 20px;
+  .item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
