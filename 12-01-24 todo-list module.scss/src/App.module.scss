@@ -1,0 +1,12 @@
+@import "./assets/css/variables.scss";
+@import "./assets/css/mixins.scss";
+body {
+  padding: 20px;
+}
+.App {
+  .title {
+    color: $primary-color;
+    padding: 20px;
+    @include flex-direction();
+  }
+}

@@ -1,0 +1,23 @@
+@import "/src/assets/css/variables.scss";
+// @import "./assets/css/mixins.scss";
+
+.TodoItem {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 20px;
+  .item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    color: $secondary-color;
+    // font-size: 20px;
+  }
+
+  button {
+    // font-size: 15px;
+    // padding: 10px;
+  }
+}
