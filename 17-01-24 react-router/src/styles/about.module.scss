@@ -1,0 +1,10 @@
+.about {
+  display: flex;
+  justify-content: center;
+  color: aquamarine;
+}
+//dovrebbe stare dentro .about{} ma non funziona...
+.text {
+  margin: 20px;
+  color: red;
+}
