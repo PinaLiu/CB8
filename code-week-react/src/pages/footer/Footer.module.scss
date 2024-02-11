@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00baf0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  color: #fff;
+  height: 50px;
+  padding: 1em;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}

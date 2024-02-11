@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;1,300&display=swap");
+
+body {
+  margin: 0;
+  background-color: rgba(255, 247, 237, 1);
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+li {
+  font-family: "Indie Flower", cursive;
+}
+/* my home */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.container-main {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  flex-wrap: wrap;
+  /* text-align: center; */
+  width: 250px;
+  height: 300px;
+  padding: 5px;
+  gap: 10px;
+  /* padding: 10px;
+  gap: 20px;
+  width: 100%;*/
+  justify-content: center;
+}
+/* animazione h3 */
+.description {
+  width: 300px;
+  height: 250px;
+  margin: auto;
+
+  /* border: 1px solid red; */
+  animation: slide-in 1s forwards;
+}
+
+.description:nth-child(odd) {
+  /* gli elementi dispari arrivano da destra */
+  animation-timing-function: ease-in;
+  transform: translateX(100%);
+}
+
+.description:nth-child(even) {
+  /* gli elementi pari arrivano da sinistra */
+  animation-timing-function: ease-out;
+  transform: translateX(-100%);
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+  }
+}
+h4 {
+  margin: 0;
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  object-fit: contain;
+}
+.img_number {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  /* margin-right: 10px; */
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+
+  object-fit: contain;
+}
+/* .number {
+  display: flex;
+  justify-content: flex-end;
+} */
+/* .shadow {
+  box-shadow: inset 0 0 200px rgba(255, 255, 255, 1);
+} */
+
+@media screen and (max-width: 700px) {
+  .no-display {
+    display: none;
+  }
+  .description {
+    margin: auto;
+  }
+}
+/* button Crea */
+
+.toolbar {
+  /* position: fixed; */
+  /* left: 50%;
+  top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+.ok {
+  padding: 15px 30px 12px 30px;
+  color: white;
+  font-weight: bold;
+
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border: 1px solid black;
+  border-bottom-width: 8px;
+  outline: none;
+}
+
+.ok {
+  background-color: green;
+  border-color: darkgreen;
+}
+
+.ok:hover {
+  animation-name: animation_button;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.ok:active {
+  animation-name: animation_button_go;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  position: relative;
+}
+
+@keyframes animation_button {
+  from {
+    border-radius: 15px;
+  }
+  50% {
+    border-radius: 8px;
+    transform: scale(1.05) translate(-2px, -2px);
+  }
+  to {
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "code-week-react",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "faker": "^3.1.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "sass": "^1.70.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0"
+  }
+}
