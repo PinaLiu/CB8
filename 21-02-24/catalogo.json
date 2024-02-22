@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Il Grande Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "releaseDate": "1925",
+    "movieAdaptation": true
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "releaseDate": "1949",
+    "movieAdaptation": true
+  },
+  {
+    "id": 3,
+    "title": "Il Signore degli Anelli",
+    "author": "J.R.R. Tolkien",
+    "releaseDate": "1954",
+    "movieAdaptation": true
+  },
+  {
+    "id": 4,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "releaseDate": "1851",
+    "movieAdaptation": true
+  },
+  {
+    "id": 5,
+    "title": "Orgoglio e pregiudizio",
+    "author": "Jane Austen",
+    "releaseDate": "1813",
+    "movieAdaptation": true
+  },
+  {
+    "id": 6,
+    "title": "Infinite Jest",
+    "author": "David Foster Wallace",
+    "releaseDate": "1996",
+    "movieAdaptation": false
+  },
+  {
+    "id": 7,
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "releaseDate": "1967",
+    "movieAdaptation": false
+  }
+]
