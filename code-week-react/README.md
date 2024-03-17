@@ -1,4 +1,4 @@
-Questo Progetto si trova al link https://prova-3-pinalius-projects.vercel.app/
+Questo Progetto si trova al link https://code-week-react.vercel.app/
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
