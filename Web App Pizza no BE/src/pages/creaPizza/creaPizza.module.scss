@@ -1,0 +1,72 @@
+.title {
+  margin: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.options {
+  border: 1px solid black;
+  flex: 1;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 700px) {
+    width: 300px;
+  }
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  @media screen and (max-width: 700px) {
+    gap: 10px;
+  }
+}
+.smallP {
+  font-size: 13px;
+  margin: 0px;
+}
+.btn_option {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darkred;
+  }
+}
+
+.addToCart {
+  width: 160px;
+  height: 35px;
+  border-radius: 25px;
+  background-color: rgba(244, 180, 0, 0.7);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  @media screen and (max-width: 700px) {
+    width: 130px;
+  }
+}
