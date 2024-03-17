@@ -1,0 +1,22 @@
+name: Build and Deploy Next.js App
+
+on:
+  push:
+    branches:
+      - main  # o il nome del branch che stai usando
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'  # Usa la versione di Node.js che preferisci
+    - run: npm install
+    - run: npm run build
+    - run: npm run export
+    - uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./out  # La cartella generata da 'next export'
